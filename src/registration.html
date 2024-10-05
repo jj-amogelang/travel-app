@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/registration.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>IT'S TIME TO <span>TRAVEL!</span></h1>
+        <h2>Let's get you registered</h2>
+        <p>Please fill in your details so we can give you the best experience specially for you.</p>
+        <form id="reservation-form">
+            <div class="passenger-name">
+                <input type="text" placeholder="Title" required>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="location">
+                <select id="continent" required>
+                    <option value="" disabled selected>Please select a continent</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Australia">Australia</option>
+                </select>
+                <select id="country" required disabled>
+                    <option value="" disabled selected>Please select a country</option>
+                </select>
+                <select id="province" required disabled>
+                    <option value="" disabled selected>Please select a province</option>
+                </select>
+                <select id="city" required disabled>
+                    <option value="" disabled selected>Please select a city</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="/public/script/registration.js"></script>
+</body>
+</html>

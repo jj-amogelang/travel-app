@@ -3,53 +3,30 @@ import ImageCard from './ImageCard';
 
 const travelData = [
     {
-        title: 'Home of Kruger park tour',
-        description: 'Unwind in Phalaborwa',
-        imageUrl: '../assets/images/DBN.jpg', // Replace with your image path
+        title: 'Kwa-Zulu Natal',
+        description: 'The Zulu Nation',
+        imageUrl: 'C:\Users\Neo Matlala\Downloads\travel-app-master\assets\images\DBN.jpg', // Replace with your image path
         link: '/travel', // Replace with your link
     },
     {
-        title: 'Home of Kruger park tour',
-        description: 'Unwind in Phalaborwa',
+        title: 'Gauteng',
+        description: 'The City of Lights ',
         imageUrl: './assets/images/DBN.jpg', // Replace with your image path
         link: '/travel', // Replace with your link
     },
     {
-        title: 'Home of Kruger park tour',
-        description: 'Unwind in Phalaborwa',
+        title: 'North West',
+        description: 'Peace and Calm',
         imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
         link: '/travel', // Replace with your link
     },
     {
-        title: 'Home of Kruger park tour',
-        description: 'Unwind in Phalaborwa',
-        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
-        link: '/travel', // Replace with your link
-    },
-    {
-        title: 'Home of Kruger park tour',
-        description: 'Unwind in Phalaborwa',
-        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
-        link: '/travel', // Replace with your link
-    },
-    {
-        title: 'Home of Kruger park tour',
-        description: 'Unwind in Phalaborwa',
-        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
-        link: '/travel', // Replace with your link
-    },
-    {
-        title: 'Best hotel rates',
-        description: 'Get up to 47% off the best hotels',
+        title: 'Western Cape',
+        description: 'City of Good and Hope',
         imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
         link: 'https://example.com/hotel-rates', // Replace with your link
     },
-    {
-        title: 'Peak Season Exclusive Offer',
-        description: 'Riverside Durban 01 - 04 January 3 Night Stay for 4 in Family Room Double Room Breakfast Daily',
-        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
-        link: 'https://example.com/peak-season-offer', // Replace with your link
-    },
+   
 ];
 
 const ImageButtons = () => {

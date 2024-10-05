@@ -1,32 +1,28 @@
 // src/components/TravelPage.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './TravelPage.css'; // Import the CSS file for styling
 
 const TravelPage = () => {
-    // Define the state variable
-    const [showRestaurants, setShowRestaurants] = useState(false);
+    // Define the state variable for active category
+    const [activeCategory, setActiveCategory] = useState('destinations');
 
-    const handleFoodClick = () => {
-        setShowRestaurants(true);
+    const handleCategoryClick = (category) => {
+        setActiveCategory(category);
     };
+
     return (
         <div className="travel-container">
             <header className="header">
                 <h1>Where do you want to go?</h1>
-                <div className="search-bar">
-                    <input type="text" placeholder="Search..." />
-                    <button>Search</button>
-                </div>
                 <div className="categories">
-                    <Link to="/"><button>Place</button></Link>
-                    <Link to="/restaurants"><button>Food</button></Link>
-                    <button>Hotel</button>
-                    <button>Safety</button>
+                    <button onClick={() => handleCategoryClick('destinations')}>Place</button>
+                    <button onClick={() => handleCategoryClick('restaurants')}>Food</button>
+                    <button onClick={() => handleCategoryClick('hotels')}>Hotel</button>
+                    <button onClick={() => handleCategoryClick('safety')}>Safety</button>
                 </div>
             </header>
 
-            {showRestaurants ? (
+            {activeCategory === 'restaurants' ? (
                 <section className="restaurants">
                     <h2>Restaurants in the Area</h2>
                     <ul>
@@ -39,41 +35,33 @@ const TravelPage = () => {
             ) : (
                 <section className="destinations">
                     <h2>Popular Destinations</h2>
-                    {/* Your existing destinations code */}
+                    <div className="destination-cards">
+                        <div className="card">
+                            <h3>Tatev monastery</h3>
+                            <p>Syunik</p>
+                        </div>
+                        <div className="card">
+                            <h3>Khor Virap</h3>
+                            <p>Ararat</p>
+                        </div>
+                        <div className="card">
+                            <h3>Noravank</h3>
+                            <p>Vayots Dzor</p>
+                        </div>
+                    </div>
                 </section>
             )}
-
-            <section className="destinations">
-                <h2>Popular Destinations</h2>
-                <div className="destination-cards">
-                    <div className="card">
-                    <img src={require('./images/Durban1.jpg').default} alt="Tatev monastery" />
-                        <h3>Tatev monastery</h3>
-                        <p>Syunik</p>
-                    </div>
-                    <div className="card">
-                    <img src={require('./images/Durban2.jpg').default} alt="Tatev monastery" />
-                        <h3>Khor Virap</h3>
-                        <p>Ararat</p>
-                    </div>
-                    <div className="card">
-                    <img src={require('./images/Durban3.png').default} alt="Tatev monastery" />
-                        <h3>Noravank</h3>
-                        <p>Vayots Dzor</p>
-                    </div>
-                </div>
-            </section>
 
             <section className="travel-ideas">
                 <h2>Travel ideas</h2>
                 <p>See our proposals for inspiration!</p>
                 <div className="idea-cards">
                     <div className="idea-card">
-                        <img src="path/to/shirak.jpg" alt="Shirak" />
+                        <img src="/assets/images/Durban1.jpg" alt="Shirak" />
                         <h3>Shirak</h3>
                     </div>
                     <div className="idea-card">
-                        <img src="path/to/kotayk.jpg" alt="Kotayk" />
+                        <img src="/assets/images/Durban1.jpg" alt="Kotayk" />
                         <h3>Kotayk</h3>
                     </div>
                 </div>

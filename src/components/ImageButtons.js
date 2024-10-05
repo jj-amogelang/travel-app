@@ -1,34 +1,65 @@
 import React from 'react';
-import './ImageButtons.css'; // Import the CSS file
+import ImageCard from './ImageCard';
+
+const travelData = [
+    {
+        title: 'Home of Kruger park tour',
+        description: 'Unwind in Phalaborwa',
+        imageUrl: '../assets/images/DBN.jpg', // Replace with your image path
+        link: '/travel', // Replace with your link
+    },
+    {
+        title: 'Home of Kruger park tour',
+        description: 'Unwind in Phalaborwa',
+        imageUrl: './assets/images/DBN.jpg', // Replace with your image path
+        link: '/travel', // Replace with your link
+    },
+    {
+        title: 'Home of Kruger park tour',
+        description: 'Unwind in Phalaborwa',
+        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
+        link: '/travel', // Replace with your link
+    },
+    {
+        title: 'Home of Kruger park tour',
+        description: 'Unwind in Phalaborwa',
+        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
+        link: '/travel', // Replace with your link
+    },
+    {
+        title: 'Home of Kruger park tour',
+        description: 'Unwind in Phalaborwa',
+        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
+        link: '/travel', // Replace with your link
+    },
+    {
+        title: 'Home of Kruger park tour',
+        description: 'Unwind in Phalaborwa',
+        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
+        link: '/travel', // Replace with your link
+    },
+    {
+        title: 'Best hotel rates',
+        description: 'Get up to 47% off the best hotels',
+        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
+        link: 'https://example.com/hotel-rates', // Replace with your link
+    },
+    {
+        title: 'Peak Season Exclusive Offer',
+        description: 'Riverside Durban 01 - 04 January 3 Night Stay for 4 in Family Room Double Room Breakfast Daily',
+        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
+        link: 'https://example.com/peak-season-offer', // Replace with your link
+    },
+];
 
 const ImageButtons = () => {
-  const handleClick = (buttonId) => {
-    alert(`You clicked ${buttonId}`);
-  };
-
-  const buttons = [
-    { id: 'button1', text: 'DBN', image: 'DBN.jpg' },
-    { id: 'button2', text: 'Text 2', image: 'image2.jpg' },
-    { id: 'button3', text: 'Text 3', image: 'image3.jpg' },
-    { id: 'button4', text: 'Text 4', image: 'image4.jpg' },
-    { id: 'button5', text: 'Text 5', image: 'image5.jpg' },
-    { id: 'button6', text: 'Text 6', image: 'image6.jpg' },
-  ];
-
-  return (
-    <div className="button-container">
-      {buttons.map((button) => (
-        <div
-          key={button.id}
-          className="image-button"
-          onClick={() => handleClick(button.id)}
-        >
-          <img src={button.image} alt={button.text} />
-          <div className="overlay-text">{button.text}</div>
+    return (
+        <div className="travel-page">
+            {travelData.map((item, index) => (
+                <ImageCard key={index} {...item} />
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default ImageButtons;

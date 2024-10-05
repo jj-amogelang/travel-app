@@ -3,8 +3,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ExploreSA from './components/ExploreSA';
 import TravelPage from './components/TravelPage';
-import RegistrationPage from './components/RegistrationPage';
-import RestaurantPage from './components/RestaurantPage';
+import RestaurantPage from './components/RestaurantPage.js';
+import ImageButtons from './components/ImageButtons'; // Import ImageButtons
+
 
 const App = () => {
     return (
@@ -12,8 +13,8 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<ExploreSA />} />
                 <Route path="/travel" element={<TravelPage />} />
-                <Route path="/register" element={<RegistrationPage />} />
                 <Route path="/restaurants" element={<RestaurantPage />} />
+                <Route path="/image-buttons" element={<ImageButtons />} />
             </Routes>
         </Router>
     );

@@ -2,7 +2,7 @@
 .container {
     position: relative;
     height: 100vh;
-    background-image: url('/assets/images/hero-bg.JPEG'); /* Replace with your image path */
+    background-image: url('/public/images/hero-bg.JPEG'); /* Corrected image path */
     background-size: cover;
     background-position: center;
     display: flex;

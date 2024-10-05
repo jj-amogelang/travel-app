@@ -5,26 +5,25 @@ const travelData = [
     {
         title: 'Kwa-Zulu Natal',
         description: 'The Zulu Nation',
-        imageUrl: 'C:\Users\Neo Matlala\Downloads\travel-app-master\assets\images\DBN.jpg', // Replace with your image path
+        imageUrl: '/public/images/Durban1.jpg',
         link: '/travel', // Replace with your link
     },
     {
         title: 'Gauteng',
+        imageUrl: '/public/images/gauteng.jpg',
         description: 'The City of Lights ',
-        imageUrl: './assets/images/DBN.jpg', // Replace with your image path
-        link: '/travel', // Replace with your link
     },
     {
         title: 'North West',
         description: 'Peace and Calm',
-        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
+        imageUrl: '/public/images/hero-bg.jpeg', // Corrected image path
         link: '/travel', // Replace with your link
     },
     {
         title: 'Western Cape',
         description: 'City of Good and Hope',
-        imageUrl: '/assets/images/DBN.jpg', // Replace with your image path
-        link: 'https://example.com/hotel-rates', // Replace with your link
+        imageUrl: '/public/images/Durban1.jpg',// Corrected image path
+        link: '', // Replace with your link
     },
    
 ];

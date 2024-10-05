@@ -2,25 +2,38 @@ const path = require('path'); // Import the path module
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js', // Your entry point
-    output: {
-        path: path.resolve(__dirname, 'dist'), // Output directory
-        filename: 'bundle.js', // Output file name
-    },
+    // ... other configurations ...
     module: {
         rules: [
+            // Rule for JavaScript and JSX files
             {
-                test: /\.(js|jsx)$/, // Match .js and .jsx files
-                exclude: /node_modules/, // Exclude node_modules
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader', // Use Babel loader
+                    loader: 'babel-loader',
                 },
             },
+            // Rule for CSS files
             {
-                test: /\.css$/, // Match .css files
-                use: ['style-loader', 'css-loader'], // Use style-loader and css-loader
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+            // Rule for image files
+            {
+                test: /\.(png|jpe?g|jpg|svg|)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]',
+                        },
+                    },
+                ],
             },
         ],
+    },
+    resolve: {
+        extensions: ['.js', '.jsx'], // Resolve .js and .jsx extensions
     },
     plugins: [
         new HtmlWebpackPlugin({

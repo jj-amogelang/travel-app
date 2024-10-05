@@ -1,0 +1,61 @@
+/* src/components/ExploreArmenia.css */
+.container {
+    position: relative;
+    height: 100vh;
+    background-image: url('/assets/images/hero-bg.JPEG'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+.get-started {
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.get-started:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.login-prompt {
+    margin-top: 20px;
+}
+
+.skip {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

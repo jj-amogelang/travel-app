@@ -1,0 +1,85 @@
+/* src/components/TravelPage.css */
+.travel-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.categories button {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    background-color: #e9ecef; /* Light button color */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.destinations, .travel-ideas, .footer {
+    margin: 20px 0;
+}
+
+.destination-cards, .idea-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card, .idea-card {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img, .idea-card img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,6 +1,6 @@
 /* src/components/TravelPage.css */
 .travel-container {
-    padding: 20px;
+    padding: 50px;
     font-family: Arial, sans-serif;
     background-color: #f8f9fa; /* Light background color */
 }
@@ -8,6 +8,19 @@
 .header {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 1.5em; /* Increased font size for the header */
+}
+
+/* Add a specific font size for the FYI section */
+.destinations h2 {
+    font-size: 1em; /* Font size for the FYI section */
+}
+
+.destinations {
+    border: 2px solid #ccc; /* Added border */
+    padding: 20px; /* Added padding for spacing */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-top: 50px; /* Added margin to push it down */
 }
 
 .search-bar {
@@ -82,4 +95,26 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.got-lost-button {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 10px; /* Space above the button */
+    font-size: 16px; /* Font size */
+}
+
+.got-lost-button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.safety {
+    border: 2px solid #ccc; /* Added border */
+    padding: 20px; /* Added padding for spacing */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-top: 30px; /* Added margin to push it down */
 }

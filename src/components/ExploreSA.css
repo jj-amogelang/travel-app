@@ -12,6 +12,45 @@
     text-align: center;
 }
 
+.header {
+    position: absolute; /* Position it at the top */
+    top: 20px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
+    color: white; /* White text */
+    text-align: left; /* Align text to the left */
+}
+
+.header-title {
+    font-size: 2.5em; /* Larger font size for the title */
+    margin: 0; /* Remove default margin */
+    text-shadow: 2px 2px 4px white; /* Add shadow for better visibility */
+}
+
+.header-subtitle {
+    font-size: 1.5em; /* Subtitle size */
+    margin: 0; /* Remove default margin */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+.nav-menu {
+    margin-top: 10px; /* Space between title and menu */
+}
+
+.nav-button {
+    background: none; /* No background */
+    border: 1px solid white; /* White border */
+    color: white !important; /* Set text color to white */
+    padding: 10px 15px; /* Padding for buttons */
+    margin-right: 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
 .overlay {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 20px;

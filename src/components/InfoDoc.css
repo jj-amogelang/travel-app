@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh; /* Ensure body takes full height */
+}
+
+.election-article {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    background: #6a1b9a; /* Purple background */
+    color: white; /* White text */
+    border-radius: 0; /* Remove border radius for full coverage */
+    box-shadow: none; /* Remove shadow for full coverage */
+    overflow: hidden; /* Hide overflow */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Full width */
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white; /* White color for the button */
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center; /* Center the title */
+}
+
+.image-container {
+    display: flex; /* Use flexbox for horizontal scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Add some padding */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.article-image {
+    width: 600px; /* Set a larger width for images */
+    height: 600px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: round the corners */
+    margin-right: 10px; /* Space between images */
+}
+
+.scroll-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; /* Add some margin */
+}
+
+.scroll-button {
+    background-color: #fff; /* White background for buttons */
+    color: #6a1b9a; /* Purple text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px; /* Space between buttons */
+    font-size: 16px;
+}
+
+.scroll-button:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center; /* Center the text */
+    padding: 0 20px; /* Add some padding for better readability */
+}
